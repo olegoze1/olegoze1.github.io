@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oleg Ozerov — Statistics &amp; Data Science</title>
+  <meta name="description" content="Oleg Ozerov: UT Austin Statistics & Data Science and Mathematics student, ML researcher and app developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="progress"></div>
+  <div id="cursor-glow"></div>
+  <canvas id="bg"></canvas>
+  <header class="nav">
+    <a class="logo" href="#top">Oleg Ozerov</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#solo">Solo</a>
+      <a href="#experience">Experience</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="orb" aria-hidden="true"></div>
+      <div class="avatar"><img src="photo.jpg" alt="Photo of Oleg Ozerov" onerror="this.parentNode.classList.add('noimg');this.remove()"></div>
+      <p class="eyebrow">hello, world. i'm</p>
+      <h1>Oleg Ozerov</h1>
+      <p class="lead">Current <strong>Statistics &amp; Data Science and Mathematics</strong> student at UT Austin. I do machine learning research, build data dashboards, and ship apps and Chrome extensions with over <strong>1,000 users</strong>.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="resume.pdf">Download résumé</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a current student at The University of Texas at Austin pursuing B.S. degrees in Statistics &amp; Data Science and in Mathematics. I've co-authored a research paper on NLP and social media accepted by Springer, led a team that built a blackjack-prediction model with 86% accuracy, and built a live Power BI dashboard tracking 5,000+ computers for the City of Georgetown. Outside the classroom, I play volleyball for the UT men's volleyball team as a middle blocker and outside hitter, and I'm a member of the American Statistical Association (ASA). Based in Austin / Georgetown, TX.</p>
+
+      <div class="skillgroup"><h3>Languages</h3>
+        <ul class="skills"><li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>C#</li><li>Luau</li></ul></div>
+      <div class="skillgroup"><h3>Tools</h3>
+        <ul class="skills"><li>Power BI</li><li>Excel</li><li>Kafka</li></ul></div>
+      <div class="skillgroup"><h3>Spoken</h3>
+        <ul class="skills"><li>English (fluent)</li><li>Russian (fluent)</li></ul></div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="item">
+          <span class="date">Class of 2030</span>
+          <h3>The University of Texas at Austin</h3>
+          <p>B.S. Statistics &amp; Data Science (SDS) and B.S. Mathematics.</p>
+        </div>
+        <div class="item">
+          <span class="date">2024 – 2026</span>
+          <h3>East View High School, Georgetown, TX</h3>
+          <p>Weighted GPA 5.62 / Unweighted 3.9 · Rank 4 of 522 · SAT 1450 (Math 760).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Research &amp; Projects</h2>
+      <div id="project-grid" class="grid"></div>
+    </section>
+
+    <section id="solo">
+      <h2>Solo Projects</h2>
+      <p class="section-note">Things I'm building on my own. More coming soon.</p>
+      <div id="solo-grid" class="grid"></div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <span class="date">Summer 2026</span>
+          <h3>Intern — Compusoft LLC</h3>
+          <p>Supported the software sales process with the company's product and client base. Analyzed shipment and inventory data to find bottlenecks and improve logistics efficiency, cleaning and organizing datasets in Excel.</p>
+        </div>
+        <div class="item">
+          <span class="date">2025</span>
+          <h3>Intern — City of Georgetown IT Department</h3>
+          <p>Closed 40+ support tickets and earned 15+ five-star reviews. Built a real-time Power BI dashboard tracking 5,000+ city computers by status, age and availability, with data modeled in DAX and refreshed automatically.</p>
+        </div>
+        <div class="item">
+          <span class="date">2024 – 2025</span>
+          <h3>Teacher — CodeNinjas</h3>
+          <p>Taught coding to elementary and middle school students, from block coding to JavaScript, Java, C# and Luau, and guided advanced students in the Unity game engine.</p>
+        </div>
+        <div class="item">
+          <span class="date">2026</span>
+          <h3>Bartender — Olive Garden</h3>
+          <p>Worked in a fast-paced, high-pressure service environment requiring quick decisions and clear customer communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <h2>Leadership &amp; Activities</h2>
+      <div class="timeline">
+        <div class="item">
+          <span class="date">2022 – 2026</span>
+          <h3>Co-Founder / President — DECA</h3>
+          <p>After transferring to East View High School, co-founded its DECA chapter. Recruited 12+ members and raised $500 for club resources and member dues.</p>
+        </div>
+        <div class="item">
+          <span class="date">2022 – 2024</span>
+          <h3>Vice President — Science Olympiad</h3>
+          <p>Led Leander High School's build-event teams, managed 12 members, and placed 2nd at the UT Austin regional competition in Solar Power.</p>
+        </div>
+        <div class="item">
+          <span class="date">2024 – 2026</span>
+          <h3>Mu Alpha Theta (Math Honor Society)</h3>
+          <p>Competed in TXML and AMC; honorable mention at the Texas State Mathematics League contest and 2nd place in AMC12.</p>
+        </div>
+        <div class="item">
+          <span class="date">2022 – 2026</span>
+          <h3>UIL Academics</h3>
+          <p>East View High School team in Math, Calculator, Number Sense, Computer Science, Science and History; consistently top 3 at 5A and invitational meets in Math and Computer Science.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in research, internships, or just want to chat? Reach me here:</p>
+      <p class="links">
+        <a href="#" id="copy-email">Email</a>
+        <a href="https://github.com/olegoze1">GitHub</a>
+        <a href="https://www.linkedin.com/in/oleg-ozerov-a9ba50324/">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Oleg Ozerov</footer>
+
+  <script src="projects.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const grid = document.getElementById('project-grid');
+    projects.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      const tags = p.tags.map(t => `<li>${t}</li>`).join('');
+      const links = [
+        p.demo ? `<a href="${p.demo}">Link</a>` : '',
+        p.code ? `<a href="${p.code}">Code</a>` : ''
+      ].join('');
+      card.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p><ul class="tags">${tags}</ul><div class="card-links">${links}</div>`;
+      grid.appendChild(card);
+    });
+    const soloGrid = document.getElementById('solo-grid');
+    soloProjects.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'card' + (p.soon ? ' soon' : '');
+      const tags = (p.tags || []).map(t => `<li>${t}</li>`).join('');
+      const links = [
+        p.demo ? `<a href="${p.demo}">Link</a>` : '',
+        p.code ? `<a href="${p.code}">Code</a>` : ''
+      ].join('');
+      card.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p><ul class="tags">${tags}</ul><div class="card-links">${links}</div>`;
+      soloGrid.appendChild(card);
+    });
+  </script>
+  <div id="toast" role="status" aria-live="polite">✓ Email copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
