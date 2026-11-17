@@ -256,3 +256,14 @@ section:not(.hero) > h2::before { content: "0" counter(sec) " /"; color: var(--v
   mix-blend-mode: soft-light;
 }
 @media (max-width: 760px) { .avatar { position: static; } }
+
+/* hero layout: text column + photo column so they never overlap */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 48px; align-content: center; align-items: center; }
+.hero > * { grid-column: 1; }
+.hero > .orb { position: absolute; grid-column: auto; }
+.hero > .avatar { position: relative; right: auto; top: auto; transform: none; grid-column: 2; grid-row: 1 / span 5; }
+.hero > .actions { justify-self: start; }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero > .avatar { grid-column: 1; grid-row: auto; order: -1; width: 130px; margin-bottom: 22px; }
+}
